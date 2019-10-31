@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Test</title>
+</head>
+<body>
+    {% if user.email %}
+        <p> Hallo {{user.name}}</p>
+    {% else %}
+        <h1>Simple Database!</h1>
+        <form method="post" action="/login">
+            <input type="text" name="user-name" placeholder="Name eingeben:">
+            <br>
+            <input type="email" name="user-email" placeholder="Email eingeben:">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+    {% endif %}
+
+</body>
+</html>
